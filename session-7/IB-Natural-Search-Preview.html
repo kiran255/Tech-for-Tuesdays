@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=utf-8">
+      <title>Testing Google SERPs</title>
+      <style type="text/css">html, body, div, span, applet, object,
+      iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+      acronym, address, big, cite, code, del, dfn, em, img, ins,
+      kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b,
+      u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+      legend, table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, figure, figcaption,
+      footer, header, hgroup, menu, nav, output, ruby, section,
+      summary, time, mark, audio, video { margin: 0; padding: 0;
+      border: 0; font-size: 100%; font: inherit; vertical-align:
+      baseline; } /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure, footer, header,
+      hgroup, menu, nav, section { display: block; } body {
+      line-height: 1; } ol, ul { list-style: none; } blockquote, q
+      { quotes: none; } blockquote:before, blockquote:after,
+      q:before, q:after { content: ''; content: none; } table {
+      border-collapse: collapse; border-spacing: 0; } .pagetitle {
+      font-family: arial,sans-serif; color: #1122CC; font-size:
+      medium; line-height: 1.2; text-decoration:underline; } .url {
+      color: #009933; font-style: normal; font-size: small;
+      font-family: arial,sans-serif; text-decoration:none; }
+      .metadesc { font-family: arial,sans-serif; color: #222222;
+      font-size: small; line-height: 1.24; text-decoration:none; }
+      .center_col { width: 528px; padding: 0 8px; margin-left:
+      132px; margin-right: 264px; } .urlDesc { max-width: 42em;
+      }</style>
+      <script type="text/javascript">
+	  
+		var changePageTitle = function(){ 
+			//Comment
+			
+			document.getElementById('pageTitleDiv').innerHTML = document.getElementById('pageTitleEntryBox').value;
+			document.getElementById('titleLeft').innerHTML = 69 - document.getElementById('pageTitleEntryBox').value.length;
+		} 
+		
+		var changeUrl = function (){ 
+		
+			document.getElementById('urlDiv').innerHTML = document.getElementById('urlEntryBox').value; 
+			document.getElementById('urlLeft').innerHTML = 50 - document.getElementById('urlEntryBox').value.length; 
+		
+		} 
+		var changeMetaDesc = function (){ 
+			
+			document.getElementById('metaDescDiv').innerHTML = document.getElementById('metaDescEntryBox').value;
+			document.getElementById('descLeft').innerHTML = 159 - document.getElementById('metaDescEntryBox').value.length;
+		}
+	  
+	  </script>
+      <body>
+        <form>Enter the page title: 
+        <input type="text" id="pageTitleEntryBox" name="pagetitle"
+        onkeyup="changePageTitle()" maxlength="69"/><div id="titleLeft">69</div></form>
+        <form>Enter the page URL: 
+        <input type="text" id="urlEntryBox" name="url"
+        onkeyup="changeUrl()" maxlength="50"/><div id="urlLeft">50</div></form></form>
+        <form>Enter the Meta Desc: 
+        <input type="text" id="metaDescEntryBox" name="metadesc"
+        onkeyup="changeMetaDesc()" maxlength="159"/><div id="descLeft">159</div></form></form>
+        <br />
+        <div>
+          <div id="pageTitleDiv" class="pagetitle">Compare Cheap
+          Car Insurance Quotes - MoneySupermarket.com</div>
+          <div class="urlDesc">
+            <div id="urlDiv" class="url">
+            www.moneysupermarket.com/car-insurance/</div>
+            <div id="metaDescDiv" class="metadesc">99% of
+            MoneySupermarket.com consumers could save on their car
+            insurance, 10% could save up to &#163;844! Click now to
+            compare quotes from 100+ companies.</div>
+          </div>
+        </div>
+      </body>
+    </meta>
+  </head>
+</html>
